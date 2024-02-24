@@ -8,18 +8,42 @@
             body    {
                 color:  darkslateblue;
             }
-
             h2 {
                 color: red
             }    
-
             ul {
                 color:chocolate
             }
-
-            p {
+            .blue-text {
                 color:blue
             }
+            .important {
+                font-weight: bold;
+            }
+            #big-ugly-green {
+                color: green;
+                font-weight: bold;
+            }
+            .important:hover {
+                background-color: pink;
+            }
+            a[href="../portfolio/about-me.html"] {
+                background-color: aqua;
+            }
+            a[href="../portfolio/index.html"] {
+                background-color: goldenrod;
+            }
+            nav {
+                border-style: solid;
+                border-width: 5px;
+                border-color: black;
+                width: 25%;
+            }
+
+            p.important {
+                width: 50%;
+            }
+
         </style>
     </head>
 
@@ -29,13 +53,14 @@
             <h2>Navigation</h2>
             <nav>
                 <ul>
-                    <li><a href="https://github.com/nsimpk/portfolio/blob/master/about-me.html">About Me</a></li>
-                    <li><a href="https://github.com/nsimpk/portfolio/blob/master/index.html">Home</a></li>
+                    <li><a href="../portfolio/about-me.html">About Me</a></li>
+                    <li><a href="../portfolio/index.html">Home</a></li>
                 </ul>
             </nav>
         </header>
 
-        <p>Cascading Style Sheets</p>
-        <p>CSS allows style rules to be shared by different HTML elements, and HTML pages.</p>
+        <p class="blue-text"> Cascading Style Sheets</p>
+        <p class="important">CSS allows style rules to be shared by different HTML elements, and HTML pages.</p>
+        <p id="big-ugly-green">Using IDs Selector Type is no longer Best Practices</p>
     </body>
 </html>
