@@ -36,12 +36,3 @@ nav {
 p.important {
     width: 50%;
 }
-
-p. {
-    color:blue;
-    padding: 1rem;
-}
-.highlight {
-    color:magenta;
-    border: 3 px dashed red;
-}
